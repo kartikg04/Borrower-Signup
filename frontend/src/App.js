@@ -31,7 +31,8 @@ function App() {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/borrowers", formData);
+      // await axios.post("http://localhost:5000/api/borrowers", formData);
+      await axios.post("https://borrower-signup-backend.onrender.com/api/borrowers", formData);
       alert("Form submitted!");
     } catch (err) {
       alert("Error: " + err.message);
